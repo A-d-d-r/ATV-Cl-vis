@@ -1,0 +1,54 @@
+print('''Acidentes Aéreos - Trabalho de AD
+
+[tipo - quantidade/porcentagem]
+
+      ''')
+        
+
+print('Anos dos Acidentes e suas respectivas quantidades')
+print('')
+anoAcidentes = [[2010, '- 94'], [2011, '- 128'], [2012, '- 160'], [2013, '- 144'], [2014, '- 130'], [2015, '- 114'], [2016, '- 115'], [2017, '- 111'], [2018, '- 112']]
+for lista in anoAcidentes:
+    for elemento in lista:
+        print(elemento, end=' ')
+    print()
+
+anoAcidentes.append([2019, '- 102']) #adicionando a outra lista do ano de 2019
+print('#'*10, 'ano de 2019 adicionado', '#'*10)
+for lista in anoAcidentes:
+    for elemento in lista:
+        print(elemento, end=' ')
+    print()
+print('-'*40)
+print('Os 3 tipos de acidentes mais recorrentes e suas respectivas porcentagens')
+print('')
+
+
+tipoAcidentes = [['Falha do Motor em Voo - 18,36%'], ['Perda de Controle no Solo - 15,24%'], ['Perda de Controle em Voo']]
+tipoAcidentes[2].extend(['- 15,24%']) #adicionando com o .extend a porcentagem
+
+for lista in tipoAcidentes:
+    for elemento in lista:
+        print(elemento, end=' ')
+    print()
+
+print('-'*40)
+print('Os 3 tipos de segmentos da aviação mais frequentes em acidentes aéreos')
+print('')
+segmentoAcidentes = [['Particular - 46,05%'], ['Agrícola - 20,39%'], ['Instrução - 14,72%']]
+for lista in segmentoAcidentes:
+    for elemento in lista:
+        print(elemento, end=' ')
+    print()
+print('-'*40)
+print('Os 3 tipos de fases de operações mais recorrentes nos acidentes aéreos')
+print('')
+
+faseAcidentes = [['Decolagem - 19,98%'], ['Pouso - 17,75%'], ['Cruzeiro - 11,23%']]
+for lista in faseAcidentes:
+    for elemento in lista:
+        print(elemento, end=' ')
+    print()
+print('-'*40)
+print('')
+print('MUITO OBRIGADO PELA ATENÇÃO A ESTE CÓDIGO')
